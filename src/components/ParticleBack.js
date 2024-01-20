@@ -16,27 +16,22 @@ const App = () => {
     }, []);
 
     return (
-        <Particles style={{zIndex:1000}}
+        <Particles
             id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}
             options={
                 {
-                    // background: {
-                    //     color: {
-                    //         value: "#ffffff",
-                    //     },
-                    // },
                     particles: {
                         number: {
-                          value: 180,
+                          value: 70,
                           density: {
                             enable: true,
                             value_area: 800
                           }
                         },
                         color: {
-                          value: "#4ec2ec"
+                          value: "#ffff"
                         },
                         shape: {
                           type: "circle",

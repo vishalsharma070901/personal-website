@@ -1,61 +1,191 @@
-import React from 'react'
+import React from "react";
+
 
 function Footer() {
   return (
     <>
-      <div className="footer">
+
+      <footer className="footer">
+        <div className="container">
           <div className="row">
-           <div className="col-lg-4  footer-heading"> 
-           <center>
+            <div className="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+              <div className="contact-box__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="icon icon-tabler icon-tabler-phone-call"
+                  viewBox="0 0 24 24"
+                  stroke-width="1"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                  <path d="M15 7a2 2 0 0 1 2 2" />
+                  <path d="M15 3a6 6 0 0 1 6 6" />
+                </svg>
+              </div>
+              <div className="contact-box__info">
+                <a href=" "className="contact-box__info--title">
+                  +91 7739151597
+                </a>
+                <p className="contact-box__info--subtitle"> Mon-Fri 9am-6pm</p>
+              </div>
+            </div>
 
-           <h1>
-            Vishal
-           </h1>
-           </center>
-           </div>
-           <div className="col-lg-4 footer-links">
-            {/* <center> */}
-           <h4 style={{marginLeft:'2rem'}}>Links</h4>
-           {/* </center>  */}
-           <ul>
-                    <a href="#main"><li>{' '}Home</li></a>
-                   <a href="#about"> <li>{' '} About</li></a>
-                   <a href="#education"> <li>{' '}Education</li></a> 
-                    <a href="#skills"><li>{' '}Skills</li></a>
-                  <a href="#projects"><li>{' '}Projects</li></a> 
-                   <a href="#contact"> <li>{' '}Contact</li></a> 
+            <div className="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+              <div className="contact-box__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="icon icon-tabler icon-tabler-mail-opened"
+                  viewBox="0 0 24 24"
+                  stroke-width="1"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <polyline points="3 9 12 15 21 9 12 3 3 9" />
+                  <path d="M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+                  <line x1="3" y1="19" x2="9" y2="13" />
+                  <line x1="15" y1="13" x2="21" y2="19" />
+                </svg>
+              </div>
+              <div className="contact-box__info">
+                <a href="https://mail.google.com/mail/u/0/#inbox" target="blank" className="contact-box__info--title">
+                  shobits723@gmail.com
+                </a>
+                <p className="contact-box__info--subtitle">Online support</p>
+              </div>
+            </div>
 
-             </ul>
-           
-                
-           </div>
-           
-           <div className="col-lg-4 footer-contact">
-            <center>
-
-            <h4>Get In Touch</h4>
-            shobits723@gmail.com
-            </center>
-           </div>
-
-   
-
-
+            <div className="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+              <div className="contact-box__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="icon icon-tabler icon-tabler-map-2"
+                  viewBox="0 0 24 24"
+                  stroke-width="1"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <line x1="18" y1="6" x2="18" y2="6.01" />
+                  <path d="M18 13l-3.5 -5a4 4 0 1 1 7 0l-3.5 5" />
+                  <polyline points="10.5 4.75 9 4 3 7 3 20 9 17 15 20 21 17 21 15" />
+                  <line x1="9" y1="4" x2="9" y2="17" />
+                  <line x1="15" y1="15" x2="15" y2="20" />
+                </svg>
+              </div>
+              <div className="contact-box__info">
+                <a href=" " className="contact-box__info--title">
+                  Jharkhand,India
+                </a>
+                <p className="contact-box__info--subtitle">Sonari, Jamshedpur, In</p>
+              </div>
+            </div>
           </div>
-        
-           <div className="copyright">
-            <center>
+        </div>
 
-           Copyright © {' '}2023 Vishal. All Rights Reserved.<br/>
-            Devloped by Vishal Kr. Sharma <i class="fa-solid fa-heart"></i>
+        <div className="footer-sm" style={{ backgroundColor: "#212121" }}>
+          <div className="container">
+            <div className="row py-4 text-center text-white">
+              <div className="col-lg-5 col-md-6 mb-4 mb-md-0">
+                connect with me on social media
+              </div>
+              <div className="col-lg-7 col-md-6">
+                <a href="https://www.facebook.com/profile.php?id=100049893883308" target="blank">
+                  <i className="fab fa-facebook"></i>
+                </a>
+                <a href="https://github.com/vishalsharma070901" target="blank">
+                  <i className="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/vishal-kumar-sharma-11029321a/" target="blank">
+                  <i className="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/_mr.vishal_007/" target="blank">
+                  <i className="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-            </center>
-           </div>
+        <div className="container mt-5">
+          <div className="row text-white justify-content-center mt-3 pb-3">
+            <div className="col-12 col-sm-6 col-lg-6 mx-auto">
+              <h5 className="text-capitalize fw-bold">Vishal</h5>
+              <hr
+                className="bg-white d-inline-block mb-4"
+                style={{ width: "60px", height: "2px" }}
+              />
+             
+            </div>
 
-      </div>
-      
+            <div className="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
+              <h5 className="text-capitalize fw-bold">links</h5>
+              <hr
+                className="bg-white d-inline-block mb-4"
+                style={{ width: "60px", height: "2px" }}
+              />
+              <ul className="list-inline campany-list">
+                <li>
+                  <a href="#home">Home</a>
+                </li>
+                <li>
+                  <a href="#about">About</a>
+                </li>
+                <li>
+                  <a href="#education">Education</a>
+                </li>
+                <li>
+                  <a href="#skill">Skills</a>
+                </li>
+                <li>
+                  <a href="#project">Projects</a>
+                </li>
+              </ul>
+            </div>
+            <div className="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
+              <h5 className="text-capitalize fw-bold">contact</h5>
+              <hr
+                className="bg-white d-inline-block mb-4"
+                style={{ width: "60px", height: "2px" }}
+              />
+              <ul className="list-inline campany-list">
+                <li>
+                  <a href="https://mail.google.com/mail/u/0/#inbox" target="blank">Email</a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/vishal-kumar-sharma-11029321a/" target="blank">Linked In</a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/_mr.vishal_007/" target="blank">Instagram</a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="footer-bottom pt-5 pb-5">
+          <div className="container">
+            <div className="row text-center text-white">
+              <div className="col-12">
+                <div className="footer-bottom__copyright">
+                  © Copyright 2024 | Created by Vishal<br></br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <a href="#home" className="shadow btn-primary rounded-circle back-to-top">
+        <i className="fas fa-chevron-up"></i>
+      </a>
     </>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

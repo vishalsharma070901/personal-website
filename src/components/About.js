@@ -1,45 +1,69 @@
-import React ,{useEffect}from 'react'
+import React from "react";
 import Aos from "aos";
-import 'aos/dist/aos.css'
-import img from './vishalimg.jpg'
-import '../App.css'
-import { useTypewriter, Cursor } from "react-simple-typewriter";
-
+import "aos/dist/aos.css";
+import img from "./images/aboutimg.jpg";
+import "../App.css";
 
 function About() {
-  const [text] = useTypewriter({
-    words: ["Thank You."],
-    loop: {},
-    typeSpeed: 200,
-    deleteSpeed: 150,
-  });
-  useEffect(() => {
-    Aos.init({ duration: 2000});
-  });
+  Aos.init({ delay: 0 });
   return (
-    <div  className='About row'   id='about'>
-      <div className="about-img col-lg-6 col-md-12 col-sm-12 " data-aos="fade-up" >
-        <center>
-
-          <img src={img}alt=""  className='aboutImg rounded mx-auto d-block'/>
-        </center>
+    <section id="about" className="services">
+      <div className="container">
+        <div className="row text-center">
+          <h1 className="display-3 fw-bold" style={{ color: "black" }}>
+            About Me!
+          </h1>
+          <div className="heading-line mb-1"></div>
+        </div>
       </div>
-      <div className='about-heading col-lg-6 col-md-12 col-sm-12' data-aos="fade-left">
-         <h1>About me.</h1>
-         <p >
-         Hello! Welcome to my website! Really happy to see<br/> you here.<br/>
 
-         
-           I'm Vishal Kumar Sharma, and I'm from <strong>Jamshedpur,Jharkhand</strong> .<br/> I'm  a <strong>Computer Science Engineering student</strong> and a Web-devloper, primarily known for my Coding and devlopment skills.<br/>At present I'm  pursuing my B.Tech (IT) from<br/> <strong>RVS College Of Engineering And Technology,Jamshedpur</strong>. I have  worked for 2 Months  as a web devlopment <strong>Intern</strong> at <strong>Aditypur Autocluster,Jamshedpur</strong> .
-         </p>
-         <h4>{text}<span>
-              <Cursor />
-            </span></h4>
-        
+      <div className="container">
+        <div className="row about-image-row">
+          <div
+            className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start"
+            data-aos="zoom-in"
+          >
+            <div className="services__pic">
+              <img
+                src={img}
+                alt="web development illustration"
+                className="aboutImg img-fluid "
+              />
+            </div>
+          </div>
+          <div
+            className="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4"
+            data-aos="fade-up"
+          >
+            <div className="services__content">
+              <div className="icon d-block fas fa-code"></div>
+
+              <p className="about-me">
+                Hello! Welcome to my website! Really happy to see you here. My
+                name is Vishal Kumar Sharma.Currently I am pursuing my{" "}
+                <strong>Btech</strong> from{" "}
+                <strong>
+                  RVS College of Engineering and Technology, Jamshedpur
+                </strong>{" "}
+                and my specialization is{" "}
+                <strong>Computer Science and Engineering</strong> . I m skilled
+                in Full stack web development using{" "}
+                <strong>Reactjs ,Nodejs ,Expressjs and MongoDB</strong>,apart
+                from that I also a good knowledge of C++,andSQL. I have also
+                made projects using Reactjs and Nodejs such as{" "}
+                <strong>Full stack chat application </strong>through which a
+                user to exchange message in real time.and a{" "}
+                <strong>Full stack blog application</strong>, apart from that
+                Last summer during my 3rd year I have also done an internship At{" "}
+                <strong> Sikharthy Infotech Private Limited </strong>and
+                developed a banking app. I really enjoyed my experience there.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-     
-    </div>
-  )
+    </section>
+  );
 }
 
-export default About
+export default About;

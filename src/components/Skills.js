@@ -1,80 +1,278 @@
-import React,{useEffect} from 'react'
-import '../App.css'
+import React, { useEffect } from "react";
+import "../App.css";
 import Aos from "aos";
-import 'aos/dist/aos.css'
+import "aos/dist/aos.css";
+import html from "./images/testimonials/html.png";
+import css from "./images/testimonials/css.png";
+import JavaScript from "./images/testimonials/javascript.png";
+import react from "./images/testimonials/react.png";
+import node from "./images/testimonials/node.png";
+import mongo from "./images/testimonials/mongodb.png";
+import express from "./images/testimonials/express.png";
+import cplus from "./images/testimonials/cplus.png";
+import Firebase from "./images/testimonials/firebase.png";
+import github from "./images/testimonials/github.png";
+import sql from "./images/testimonials/sql.png";
+import Python from "./images/testimonials/python.png";
 
 function Skills() {
   useEffect(() => {
-    Aos.init({ duration: 1000});
+    Aos.init({ duration: 1000 });
   });
   return (
-    <div className='skill row' id='skills'>
-      <center>
-      <h1 data-aos="fade-up">Skills</h1>
-        </center>
-   
-
- <div className=" Languages col-lg-4 col-md-12 col-sm-12 "  data-aos="fade-right">
-  <center>
-  <h3> Languages </h3>
-  </center>
-  <p>
-  <ul>
-    <li><i class="fa-sharp fa-solid fa-arrow-right"></i>{' '}C</li>
-    <li><i class="fa-sharp fa-solid fa-arrow-right"></i>{' '}C++</li>
-    <li><i class="fa-sharp fa-solid fa-arrow-right"></i>{' '}Python</li>
-    <li><i class="fa-sharp fa-solid fa-arrow-right"></i>{' '}Javascript</li>
-  </ul>
-
-
-
-
-  </p>
-  
-</div>
- <div className=" frontend  col-lg-4 col-md-12 col-sm-12" data-aos="fade-up"> 
- <center>
- <h3>Frontend framework </h3>
- </center>
- <p>
- <ul>
-    <li><i class="fa-sharp fa-solid fa-arrow-right"></i>{' '}HTML</li>
-    <li><i class="fa-sharp fa-solid fa-arrow-right"></i>{' '}CSS</li>
-    <li><i class="fa-sharp fa-solid fa-arrow-right"></i>{' '}JavaScript</li>
-    <li><i class="fa-sharp fa-solid fa-arrow-right"></i>{' '}React js</li>
-    <li><i class="fa-sharp fa-solid fa-arrow-right"></i>{' '}Bootstrap</li>
-    <li><i class="fa-sharp fa-solid fa-arrow-right"></i>{' '}Material-ui</li>
-  </ul>
-
-
- </p>
-
-
- 
- </div>
- <div className=" backend col-lg-4 col-md-12 col-sm-12" data-aos="fade-left"  >
-  <center>
-  <h3>Backend framework</h3>
-  </center>
-  <p>
-  <ul>
-    <li><i class="fa-sharp fa-solid fa-arrow-right"></i>{' '}Django</li>
-    <li><i class="fa-sharp fa-solid fa-arrow-right"></i>{' '}Django REST Framework</li>
-    <li><i class="fa-sharp fa-solid fa-arrow-right"></i>{' '}My SQL</li>
-    <li><i class="fa-sharp fa-solid fa-arrow-right"></i>{' '}Firebase</li>
-  </ul>
-  </p>
-
-  
- 
- </div>
-
-   
- 
-
- 
-</div>
-  )
+    <div className="container" id="skills">
+      <div className="row text-center">
+        <h1 className="display-3 fw-bold" style={{ color: "black" }}>
+          Skills
+        </h1>
+        <div className="heading-line mb-1"></div>
+      </div>
+      <div className="skills" data-aos="zoom-out">
+        <div className="row row-cols-1 row-cols-md-4 g-4">
+          <div className="col">
+            <div
+              className="card"
+              style={{
+                background: "transparent",
+                border: "none",
+                boxShadow:
+                  "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px",
+              }}
+            >
+              <center>
+                <img src={html} class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title" style={{ color: "white" }}>
+                    HTML
+                  </h5>
+                </div>
+              </center>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card"
+              style={{
+                background: "transparent",
+                border: "none",
+                boxShadow:
+                  "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px",
+              }}
+            >
+              <center>
+                <img src={css} class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title" style={{ color: "white" }}>
+                    CSS
+                  </h5>
+                </div>
+              </center>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card"
+              style={{
+                background: "transparent",
+                border: "none",
+                boxShadow:
+                  "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px",
+              }}
+            >
+              <center>
+                <img src={JavaScript} class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title" style={{ color: "white" }}>
+                    JavaScript
+                  </h5>
+                </div>
+              </center>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card"
+              style={{
+                background: "transparent",
+                border: "none",
+                boxShadow:
+                  "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px",
+              }}
+            >
+              <center>
+                <img src={express} class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title" style={{ color: "white" }}>
+                    Express.Js
+                  </h5>
+                </div>
+              </center>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card"
+              style={{
+                background: "transparent",
+                border: "none",
+                boxShadow:
+                  "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px",
+              }}
+            >
+              <center>
+                <img src={react} class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title" style={{ color: "white" }}>
+                    React.Js
+                  </h5>
+                </div>
+              </center>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card"
+              style={{
+                background: "transparent",
+                border: "none",
+                boxShadow:
+                  "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px",
+              }}
+            >
+              <center>
+                <img src={node} class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title" style={{ color: "white" }}>
+                    Node.Js
+                  </h5>
+                </div>
+              </center>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card"
+              style={{
+                background: "transparent",
+                border: "none",
+                boxShadow:
+                  "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px",
+              }}
+            >
+              <center>
+                <img src={mongo} class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title" style={{ color: "white" }}>
+                    MongoDB
+                  </h5>
+                </div>
+              </center>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card"
+              style={{
+                background: "transparent",
+                border: "none",
+                boxShadow:
+                  "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px",
+              }}
+            >
+              <center>
+                <img src={sql} class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title" style={{ color: "white" }}>
+                    SQL
+                  </h5>
+                </div>
+              </center>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card"
+              style={{
+                background: "transparent",
+                border: "none",
+                boxShadow:
+                  "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px",
+              }}
+            >
+              <center>
+                <img src={cplus} class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title" style={{ color: "white" }}>
+                    C++
+                  </h5>
+                </div>
+              </center>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card "
+              style={{
+                background: "transparent",
+                border: "none",
+                boxShadow:
+                  "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px",
+              }}
+            >
+              <center>
+                <img src={Python} class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title" style={{ color: "white" }}>
+                    Python
+                  </h5>
+                </div>
+              </center>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card "
+              style={{
+                background: "transparent",
+                border: "none",
+                boxShadow:
+                  "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px",
+              }}
+            >
+              <center>
+                <img src={Firebase} class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title" style={{ color: "white" }}>
+                    Firebase
+                  </h5>
+                </div>
+              </center>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card"
+              style={{
+                background: "transparent",
+                border: "none",
+                boxShadow:
+                  "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px",
+              }}
+            >
+              <center>
+                <img src={github} class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title" style={{ color: "white" }}>
+                    Github
+                  </h5>
+                </div>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default Skills
+export default Skills;
